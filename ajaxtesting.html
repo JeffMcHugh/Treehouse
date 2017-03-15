@@ -7,6 +7,19 @@
   <title>AJAX with JavaScript</title>
   <script>
  
+    
+    
+  var xhrequest = new XMLHttpRequest();
+  xhr.open('GET', 'sidebar.html');
+  xhr.onreadystatechange = function () {
+    if (xhr.readyState === 4) {
+      document.getElementById('ajax').innerHTML = xhr.responseText;
+    }
+  };
+  xhr.send();
+    
+    
+    
   </script>
 </head>
 <body>
